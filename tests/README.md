@@ -1,6 +1,6 @@
 # Project README
 
-![Screenshot](flask_blog_test_cmd.png)
+![Screenshot](flask-blog-test-cmd.png)
 
 ## Instructions on How to Run the Test
 
