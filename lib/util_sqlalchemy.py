@@ -15,7 +15,8 @@ class AwareDateTime(TypeDecorator):
       https://gist.github.com/inklesspen/90b554c864b99340747e
     """
     impl = DateTime(timezone=True)
-
+    cache_ok = True
+    
     def process_bind_param(self, value, dialect):
         if isinstance(value, datetime.datetime) and value.tzinfo is None:
             raise ValueError('{!r} must be TZ-aware'.format(value))

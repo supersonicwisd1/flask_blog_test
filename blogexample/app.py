@@ -12,10 +12,10 @@ db = SQLAlchemy()
 # ckeditor = CKEditor()
 
 
-def create_app(main=True, debug=True):
+def create_app(config_name=None, main=True, debug=True):
     """Create an application."""
     app = Flask(__name__)
-    app.config.from_object('config.settings')
+    app.config.from_object(config_name)
 
     app.config['SECRET_KEY'] = 'secret!'
 

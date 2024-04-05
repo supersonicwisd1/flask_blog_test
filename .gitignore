@@ -1,2 +1,5 @@
+.gitignore
 benv/
 *.pyc
+venv/
+test.db
